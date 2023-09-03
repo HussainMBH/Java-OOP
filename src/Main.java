@@ -5,5 +5,7 @@ class Main{
         animal tg = new Tiger();
         ln.sound();
         tg.sound();
+
+        System.out.println("Finally finished OOP");
     }
 }
