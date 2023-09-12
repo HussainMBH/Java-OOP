@@ -1,15 +1,6 @@
-abstract class animal {
-    abstract void sound();
+public class animal {
+    public void makesound(){
+        System.out.println("Animal Make Sound");
+    }
 }
 
-class Lion extends animal{
-    @Override
-    void sound(){
-        System.out.println("My name is Lion");
-    }}
-class Tiger extends animal{
-    @Override
-    void sound(){
-        System.out.println("My name is Tiger");
-    }
-        }
