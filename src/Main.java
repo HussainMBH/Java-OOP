@@ -3,10 +3,11 @@ import java.sql.SQLOutput;
 public class Main {
     public static void main(String[] args) {
         int[] a = {10,20,30};
-        int[] b = {40,50};
+        int[] b = {40,50,60};
         int len = a.length + b.length;
+        int d[] = new int[3];
 
-        int[] c= new int[len];
+        int[] c= new int[5];
 
         //int[] c={10,20,30,40,50};
 
@@ -33,9 +34,27 @@ public class Main {
             c[i] = b[j];
             j++;
         }
-
+        System.out.println("arranging two arrays in single array");
         for(int i = 0; i<c.length; i++){
             System.out.print(c[i] + " ");
+        }
+
+
+        //arrays Multiplication
+        /*
+        want to think like this
+        a[0] *b[0] = c[0]
+        a[1] * b[1] = c[1]
+        a[2] * b[2] = c[2]
+         */
+        for(int i =0; i<d.length; i++){
+            d[i] = a[i] * b[i];
+        }
+        System.out.println();
+        System.out.println("Multiplication");
+
+        for(int i = 0; i<d.length; i++){
+            System.out.print(d[i] + " ");
         }
 
     }
